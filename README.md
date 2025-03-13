@@ -2,20 +2,22 @@
 
 <hr>
 
-# XaloraClient • The modern client panel for Pterodactyl
+# XaloraClient • The modern dashboard for Pterodactyl
 
 All features:
 
 - Resource Management (Use it to create servers etc)
 - Coins (AFK Page Earning, Linkvertise earning)
 - Renewal (Require coins for renewal)
+- Coupons (which give resources & coins to a user)
 - Servers (create, view, and edit servers)
+- Payments (buy via Stripe)
 - Login Queue (prevent overload)
 - User System (auth, regen password, etc)
 - Store (buy resources with coins)
 - Dashboard (view resources)
 - Join for Rewards (join Discord servers for coins).
-- Admin (set/add/remove coins & resources)
+- Admin (set/add/remove coins & resources, create/revoke coupons)
 - API (for bots & other things)
 
 
@@ -56,7 +58,7 @@ To run in the background, use PM2 (see PM2 section)</br>
 
 ## 2. Setting up webserver
 
-<strong>2.1</strong> Rename exemple_settings.json to settings.json and configure settings.json (specify panel domain/apikey and discord auth settings for it to work)
+<strong>2.1</strong> Rename example_settings.json to settings.json and configure settings.json (specify panel domain/apikey and discord auth settings for it to work)
 
 <strong>2.2</strong> Start the server (Ignore the 2 strange errors that might come up)
 
@@ -146,3 +148,4 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
+
